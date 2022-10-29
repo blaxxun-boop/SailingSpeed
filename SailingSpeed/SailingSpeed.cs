@@ -11,7 +11,7 @@ namespace SailingSpeed;
 public class Guilds : BaseUnityPlugin
 {
 	private const string ModName = "Sailing Speed";
-	private const string ModVersion = "1.0.1";
+	private const string ModVersion = "1.0.2";
 	private const string ModGUID = "org.bepinex.plugins.sailingspeed";
 
 	private enum Toggle
