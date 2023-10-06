@@ -8,16 +8,17 @@ using UnityEngine;
 namespace SailingSpeed;
 
 [BepInPlugin(ModGUID, ModName, ModVersion)]
+[BepInIncompatibility("org.bepinex.plugins.valheim_plus")]
 public class Guilds : BaseUnityPlugin
 {
 	private const string ModName = "Sailing Speed";
-	private const string ModVersion = "1.0.2";
+	private const string ModVersion = "1.0.3";
 	private const string ModGUID = "org.bepinex.plugins.sailingspeed";
 
 	private enum Toggle
 	{
 		On = 1,
-		Off = 0
+		Off = 0,
 	}
 
 	private static readonly ConfigSync configSync = new(ModName) { CurrentVersion = ModVersion };
